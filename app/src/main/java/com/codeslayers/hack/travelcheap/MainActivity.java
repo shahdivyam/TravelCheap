@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                     .color(Color.parseColor(color))//Google maps violet color for metro and brown color for bus
                                     .geodesic(true)
                             );
-                            polylines.add(polyline);
+                            polylines.add(index,polyline);
                             JSONArray legs = routeObject.getJSONArray("legs");
                             System.out.println("legs "+legs.length());
                             Route route=new Route();
